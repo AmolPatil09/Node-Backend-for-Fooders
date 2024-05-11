@@ -1,0 +1,77 @@
+2024-05-11T14:45:46.376Z - TypeError: userModel.register is not a function
+    at userService.register (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:11:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userController.register (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:7:21)
+2024-05-11T14:46:40.078Z - TypeError: userModel.register is not a function
+    at userService.register (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:11:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userController.register (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:7:21)
+2024-05-11T14:47:50.220Z - MongoServerError: E11000 duplicate key error collection: Fooders.users index: userName_1 dup key: { userName: "amol@123" }
+    at InsertOneOperation.execute (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-05-11T17:24:48.619Z - Error: User not exist
+    at userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:44:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T17:25:42.078Z - ReferenceError: login is not defined
+    at userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T17:27:11.817Z - TypeError: res.cookies is not a function
+    at userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:24:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-05-11T18:10:58.987Z - TypeError: setUser is not a function
+    at userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:34:36.204Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:8:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:38:06.534Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:8:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:45:56.736Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:18:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:47:02.832Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:19:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:48:40.277Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:20:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:49:11.528Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:21:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:49:54.578Z - Error: Somthing went wrong
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:21:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:56:23.376Z - Error: user alredy login
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:8:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:57:01.869Z - Error: user alredy login
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:8:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
+2024-05-11T18:58:15.486Z - Error: user alredy login
+    at sessionService.createSession (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\sessionService.js:8:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async userService.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Service\userService.js:30:35)
+    at async userController.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend for Fooders\Controllers\userController.js:23:17)
