@@ -39,7 +39,8 @@ const sessionSchema=new mongoose.Schema({
         type:String,
         require:true
      },
-})
+},{timestamps:true}
+)
 const connection={}
 const url="mongodb://127.0.0.1:27017/Fooders"
 const connect=async(docName,dacName)=>{

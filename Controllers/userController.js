@@ -30,4 +30,17 @@ userController.login= async(req, res,next) => {
 
 }
 
+userController.logout= async(req, res,next) => { 
+   const sessionId=req.cookies?.uId
+   console.log("sessionId",sessionId);
+    try {
+    const logout=await userService.logout(sessionId);
+    res.json({"message":"logout success"})
+        
+    } catch (error) {
+        next(error)
+    }
+
+}
+
 module.exports=userController;

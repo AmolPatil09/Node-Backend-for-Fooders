@@ -45,4 +45,9 @@ userService.register=async(register)=>{
       }
   }
 
+  userService.logout=async(sessionId)=>{
+    const logout=await sessionService.logout(sessionId);
+    return logout;
+  }
+
 module.exports=userService;

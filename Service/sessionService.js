@@ -31,5 +31,16 @@ sessionService.getSession=async(sessionId)=>{
  }
 }
 
+sessionService.logout=async(sessionId)=>{
+  try {
+    const userId=await sessionModel.logout(sessionId);
+    return userId;
+ } catch (error) {
+  const err=new Error("Somthing went wrong")
+  err.status=400
+  throw err 
+ }
+}
+
 
 module.exports = sessionService;
