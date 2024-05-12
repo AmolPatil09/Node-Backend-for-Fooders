@@ -2,7 +2,6 @@ const connection=require('../Utilities/connection')
 let sessionModel={};
 
 sessionModel.setSeesion=async(userId,sessionId)=>{
-    console.log(userId,sessionId);
     const model=await connection.getSeesionCollection();
    
         const user=await model.create({
@@ -16,7 +15,7 @@ sessionModel.setSeesion=async(userId,sessionId)=>{
 }
 sessionModel.getUserId=async(userId)=>{
     const model=await connection.getSeesionCollection();
-    const user=await model.find({userId:userId},{sessionId:1,_id:0})
+    const user=await model.find({sessionId:userId},{sessionId:1,_id:0})
     return user;
 }
 sessionModel.logout=async(sessionId)=>{

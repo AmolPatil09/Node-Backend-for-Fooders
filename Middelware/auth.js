@@ -1,36 +1,28 @@
-const { getUser } = require("../service/auth");
 
-async function restrictToLoggedinUserOnly(req, res, next) {
-  const userUid = req.cookies?.uid;
+const sessionService=require('../Service/sessionService')
+const auth={}
+auth.restrictToLoggedinUserOnly=async(req, res, next)=> {
+try {
+  const sessionId=req.cookies?.uId
+  console.log(sessionId);
 
-  if (!userUid) {
+  if (!sessionId) {
     const error=new Error("unathorized user")
     error.status=400
     throw error 
   }
+  const user = await sessionService.getSession(sessionId)
 
-  const user = getUser(userUid);
-
-  if (!user) {
+  if (user.length==0) {
         const error=new Error("unathorized user")
         error.status=400
         throw error   
     }
-
   req.user = user;
   next();
+} catch (error) {
+  next(error)
+}
 }
 
-// async function checkAuth(req, res, next) {
-//   const userUid = req.cookies?.uid;
-
-//   const user = getUser(userUid);
-
-//   req.user = user;
-//   next();
-// }
-
-module.exports = {
-  restrictToLoggedinUserOnly,
-  checkAuth,
-};
+module.exports =auth;

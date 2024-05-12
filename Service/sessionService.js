@@ -22,7 +22,7 @@ sessionService.createSession=async(userId,sessionId)=>{
 }
 sessionService.getSession=async(sessionId)=>{
   try {
-    const userId=await sessionModel.getUserId(userId);
+    const userId=await sessionModel.getUserId(sessionId);
     return userId;
  } catch (error) {
   const err=new Error("Somthing went wrong")
